@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+/* Custom Properties */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -35,7 +35,7 @@
     }
 }
 
-/* General styles */
+/* General Styles */
 
 body {
     background: var(--clr-light);
@@ -127,11 +127,94 @@ h3 { font-size: var(--fs-h3) }
     margin-bottom: 2em;
 }
 
-/* header */
+/* Nav Section */
 
-nav { display: none; }
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
 
-/*  Intro section  */
+.logo {
+    max-width: 150px;
+}
+
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--clr-accent);
+}
+
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: var(--clr-accent);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+
+/*  Intro Section  */
 
 .intro {
     position: relative;
@@ -177,7 +260,7 @@ nav { display: none; }
 
 
 
-/*  My services section  */
+/*  My Services Section  */
 
 .my-services {
     background-color: var(--clr-dark);
@@ -267,7 +350,7 @@ nav { display: none; }
     }
 }
 
-/* My Work */
+/* My Work Section */
 
 .my-work {
     background-color: var(--clr-dark);
@@ -303,7 +386,7 @@ nav { display: none; }
 }
 
 
-/* footer */
+/* Footer Section */
 
 .footer {
     background: #111;
@@ -352,12 +435,12 @@ nav { display: none; }
 
 
 
-.logo_img{
+/* .logo_img{
     grid-area: img;
     max-width: 12%;
     position: relative;
     z-index: 0;    
-}
+} */
 
 .my-service-p {
     font-size: x-large;
