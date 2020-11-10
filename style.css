@@ -477,3 +477,20 @@ header {
 .about-me-p {
     font-size: larger;
 }
+
+.portfolio_text {
+    font-size: larger;
+    margin-bottom: 2em;
+}
+
+.portfolio_link {
+    list-style-type: none;
+    font-weight: var(--fw-reg);
+    font-size: larger;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+    .portfolio_link a {
+        color: black;
+    }
