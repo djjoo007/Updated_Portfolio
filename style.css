@@ -470,15 +470,6 @@ header {
     margin-right: auto;
 }
 
-
-
-/* .logo_img{
-    grid-area: img;
-    max-width: 12%;
-    position: relative;
-    z-index: 0;    
-} */
-
 .my-service-p {
     font-size: x-large;
 }
@@ -486,7 +477,3 @@ header {
 .about-me-p {
     font-size: larger;
 }
-
-
-
-
