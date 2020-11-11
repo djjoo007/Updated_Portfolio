@@ -470,8 +470,15 @@ header {
     margin-right: auto;
 }
 
-.my-service-p {
+.my-service-p-link {
     font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+
+.my-service-p-link:hover {
+    opacity: .7;
+    text-decoration: underline;
 }
 
 .about-me-p {
