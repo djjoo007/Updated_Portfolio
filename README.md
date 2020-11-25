@@ -2,4 +2,4 @@
 
 This application is an updated responsive Portfolio Website which showcasing different class assignments and project.
 
-## Technology
+This portfolio shows my contact information including links t o my github and linkedin page.
