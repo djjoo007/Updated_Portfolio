@@ -5,4 +5,4 @@ This application is an updated responsive Portfolio Website which showcasing dif
 This portfolio shows my contact information including links to my github and linkedin page.
 
 # Screenshot
-![](img/portfolio.jpg)
+![](img/portfolio.png)
